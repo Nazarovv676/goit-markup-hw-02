@@ -1,198 +1,198 @@
-/* Змінна для кольору тексту у футері */
-:root {
-    --footer-text-color: #F4F4FD;
-  }
-  
-  /* Загальний стиль body */
-  body {
-    /* Базовий колір тексту */
-    color: #434455;
-    /* Підключений шрифт Roboto як основний */
+body {
     font-family: "Roboto", sans-serif;
-    margin: 0; /* margin допустимий, padding - ні */
-  }
-  
-  /* Прибираємо крапки у списків */
-  ul {
-    list-style: none;
-    margin: 0;
-  }
-  
-  /* Посилання без підкреслень */
-  a {
-    text-decoration: none;
-  }
-  
-  /* ============================= */
-  /* ЛОГОТИП */
-  /* ============================= */
-  .nav-logo {
-    /* Шрифт Raleway 700 */
+    color: #434455;
+    background-color: var(--background-color);
+}
+
+/* ==================ELEMENTS================== */
+:root {
+    --small-text-color: #2e2f42;
+    --background-color: #ffffff;
+}
+
+/* ==================COMPONENTS================== */
+.secondary-title {
+    font-size: 36px;
+    line-height: 1.11;
+    /* identical to box height, or 111% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: var(--small-text-color);
+}
+
+.studio-color {
+    color: var(--small-text-color);
+}
+
+.small-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+    color: var(--small-text-color);
+}
+
+.small-descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    /* or 150% */
+
+    letter-spacing: 0.02em;
+
+    /* SLATE */
+
+    color: #434455;
+}
+
+.small-descr-dark-theme {
+    color: #f4f4fd;
+}
+
+.studio-color-dark-theme {
+    color: #f4f4fd;
+}
+
+/* ==================Header================== */
+
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
     letter-spacing: 0.03em;
+    line-height: 1.17;
+    text-decoration: none;
     text-transform: uppercase;
     color: #4d5ae5;
-  }
-  
-  /* Усередині логотипу один span */
-  .logo-span {
-    color: #2e2f42;
-  }
-  
-  /* У футері те ж саме лого, але фон темний,
-     тому span переоприділяємо через селектор footer */
-  .foot-area .logo-span {
-    color: #f4f4fd;
-  }
-  
-  /* ============================= */
-  /* СТИЛІ ДЛЯ МЕНЮ */
-  /* ============================= */
-  .nav-link {
-    font-weight: 500;       /* 500 */
-    font-size: 16px;        /* 16px */
-    line-height: 1.5;       /* 1.5 */
-    letter-spacing: 0.02em; /* 0.02em */
-    color: #2e2f42;         /* колір тексту */
-  }
-  
-  .nav-link:hover,
-  .nav-link:focus {
-    color: #404bbf; /* при ховері/фокусі */
-  }
-  
-  /* ============================= */
-  /* Адреса (address) */
-  .hdr-address {
-    font-style: normal; /* прибирання курсиву */
-  }
-  
-  /* Контакти */
-  .contact-link {
+}
+
+.menu-item {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--small-text-color);
+}
+
+.contact {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    letter-spacing: 0.02em;
     color: #434455;
-  }
-  
-  .contact-link:hover,
-  .contact-link:focus {
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-item:hover,
+.menu-item:focus,
+.contact:hover,
+.contact:focus {
     color: #404bbf;
-  }
-  
-  /* ============================= */
-  /* 1-ша секція (Hero) */
-  /* ============================= */
-  .sec-hero {
-    background-color: #2e2f42;
-    margin: 0; /* можна додати margin, якщо треба відступи */
-  }
-  
-  /* Заголовок 1-ї секції */
-  .sec-title {
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.menu-link {
+    color: var(--small-text-color);
+}
+
+/* ==================Hero================== */
+.hero {
+    background-color: var(--small-text-color);
+}
+
+.main-title {
+    text-align: center;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
+
     color: #ffffff;
-    margin: 0; /* дозволений, якщо потрібен відступ, додайте margin-top/bottom */
-  }
-  
-  /* Кнопка */
-  .btn-order {
-    background-color: #4d5ae5;
+}
+
+.hero-button {
+
     font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background: #4d5ae5;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
     cursor: pointer;
-    border: none; /* border не заборонений, але не вимагається */
-    margin: 0;    /* можна додати margin для відступу */
-  }
-  
-  .btn-order:hover,
-  .btn-order:focus {
-    background-color: #404bbf; /* змінюємо фон на ховер/фокус */
-  }
-  
-  /* Заголовки в списку 1-ї секції */
-  .srv-title {
+
+    color: white;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404bbf;
+}
+
+.address {
+    font-style: normal;
+}
+
+/* ==================MAIN================== */
+.our-team {
+    background-color: #f4f4fd;
+}
+
+.our-team-list-item {
+    background-color: #ffffff;
+}
+
+/* ==================FOOTER================== */
+
+.page-footer {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.17;
+    letter-spacing: 0.03;
+    color: #4d5ae5;
+
+    /* NAVY BLUE */
+
+    background: var(--small-text-color);
+}
+
+/* ==================PORTFOLIO================== */
+.navigation-button {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin: 0; /* можна додати margin для відступу */
-  }
-  
-  /* Параграфи в списку 1-ї секції */
-  .srv-text {
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    margin: 0; /* можна додати margin для відступу */
-  }
-  
-  /* ============================= */
-  /* 2-га секція (фон #F4F4FD) */
-  /* ============================= */
-  .sec-light {
-    background-color: #f4f4fd;
-    margin: 0;
-  }
-  
-  /* Заголовок 2-ї секції */
-  .sec2-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin: 0;
-  }
-  
-  /* ============================= */
-  /* 3-тя секція (також #F4F4FD) */
-  /* ============================= */
-  .sec-light2 {
-    background-color: #f4f4fd;
-    margin: 0;
-  }
-  /* Використовуємо той самий .sec2-title для заголовка */
-  
-  /* ============================= */
-  /* 4-та секція (Portfolio) */
-  /* ============================= */
-  .sec-portfolio {
-    margin: 0;
-    /* Колір фону не вимагається, лишаємо прозорий або білий */
-  }
-  
-  /* Знову використовуємо .sec2-title для заголовка */
-  /* Для пунктів списку re-юзаємо .srv-title і .srv-text */
-  
-  /* Картинки: ширина 360 в атрибуті HTML, alt не порожній */
-  
-  /* ============================= */
-  /* Футер */
-  /* ============================= */
-  .foot-area {
-    background-color: #2e2f42;
-    margin: 0;
-  }
-  
-  /* Параграф у футері з використанням змінної для кольору */
-  .foot-text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--footer-text-color);
-    margin: 0;
-  }
-  
+    letter-spacing: 0.04em;
+    cursor: pointer;
+
+    /* CLOUD */
+
+    background: #f4f4fd;
+    /* CORNFLOWER */
+
+
+    color: #4d5ae5;
+}
+
+.navigation-button:hover,
+.navigation-button:focus {
+    color: #ffffff;
+    background-color: #404bbf;
+}

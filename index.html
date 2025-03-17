@@ -1,235 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>WebStudio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Обов'язкові підключення Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.com/libraries/modern-normalize" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <!-- Підключення файлу стилів -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <!-- 1. Шапка сайту -->
-    <header>
-      <nav>
-        <!-- Логотип -->
-        <a href="#" class="nav-logo"
-          >WEB<span class="logo-span">Studio</span></a
-        >
-        <!-- Список посилань -->
-        <ul>
-          <!-- Перший пункт: Home -->
-          <li>
-            <a href="./index.html" class="nav-link">Home</a>
-          </li>
-          <!-- Другий пункт: Portfolio -->
-          <li>
-            <a href="" class="nav-link">Portfolio</a>
-          </li>
-          <!-- Третій пункт: Contacts -->
-          <li>
-            <a href="" class="nav-link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Address -->
-      <address class="hdr-address">
-        <ul>
-          <li>
-            <a
-              href="mailto:info@devstudio.com"
-              class="contact-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="contact-link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </header>
-
-    <!-- 2. Перша секція (Hero) -->
-    <section class="sec-hero">
-      <h2 class="sec-title">Effective Solutions for Your Business</h2>
-      <button type="button" class="btn-order">Order Service</button>
-
-      <!-- Список із 4 пунктами -->
-      <ul>
+<body>
+  <!-- Header -->
+  <header class="page-header">
+    <nav class="page-nav">
+      <a href="./index.html" class="logo link">Web<span class="studio-color">Studio</span></a>
+      <ul class="menu list">
         <li>
-          <h3 class="srv-title">Strategy</h3>
-          <p class="srv-text">
+          <a class="menu-item menu-link link" href="./index.html">Studio</a>
+        </li>
+        <li>
+          <a class="menu-item menu-link link" href="">Portfolio</a>
+        </li>
+        <li>
+          <a class="menu-item menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="address">
+      <ul class="list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
+        </li>
+        <li>
+          <a href="tel:+110001111111" class="link contact">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+    </address>
+  </header>
+  <!-- Main -->
+  <main class="page-main">
+    <!-- Square -->
+    <section class="hero">
+      <h1 class="main-title">Effective Solutions for Your Business</h1>
+      <button type="button" class="hero-button">Order Service</button>
+    </section>
+    <section>
+      <h2 class="hidden-title"></h2>
+      <ul class="list">
+        <li>
+          <h3 class="small-title">Strategy</h3>
+          <p class="small-descr">
             Our goal is to identify the business problem to walk away with the
             perfect and creative solution.
           </p>
         </li>
         <li>
-          <h3 class="srv-title">Punctuality</h3>
-          <p class="srv-text">
+          <h3 class="small-title">Punctuality</h3>
+          <p class="small-descr">
             Bring the key message to the brand's audience for the best price
             within the shortest possible time.
           </p>
         </li>
         <li>
-          <h3 class="srv-title">Diligence</h3>
-          <p class="srv-text">
-            Research and confirm brands with the strongest digital growth
-            opportunities and minimize risk.
+          <h3 class="small-title">Diligence</h3>
+          <p class="small-descr">
+            Research and confirm brands that present the strongest digital
+            growth opportunities and minimize risk.
           </p>
         </li>
         <li>
-          <h3 class="srv-title">Technologies</h3>
-          <p class="srv-text">
+          <h3 class="small-title">Technologies</h3>
+          <p class="small-descr">
             Design practice focused on digital experiences. We bring forth a
             deep passion for problem-solving.
           </p>
         </li>
       </ul>
     </section>
-
-    <!-- 3. Друга секція (фон #F4F4FD) -->
-    <section class="sec-light">
-      <h2 class="sec2-title">our team</h2>
-      <ul>
-        <li>
-          <h3 class="srv-title">Marketing</h3>
-          <p class="srv-text">We deliver the best marketing solutions.</p>
+    <!-- Our Team -->
+    <section class="our-team">
+      <h2 class="secondary-title">Our Team</h2>
+      <ul class="list">
+        <li class="our-team-list-item">
+          <img src="./images/mark_guerrero.jpg" width="264" alt="men with beard" />
+          <h3 class="small-title">Mark Guerrero</h3>
+          <p class="small-descr">Product Designer</p>
         </li>
-        <li>
-          <h3 class="srv-title">Design</h3>
-          <p class="srv-text">We create modern and user-friendly designs.</p>
+        <li class="our-team-list-item">
+          <img src="./images/tom_ford.jpg" width="264" alt="happy men" />
+          <h3 class="small-title">Tom Ford</h3>
+          <p class="small-descr">Frontend Developer</p>
         </li>
-        <li>
-          <h3 class="srv-title">Development</h3>
-          <p class="srv-text">We build high-quality web applications.</p>
+        <li class="our-team-list-item">
+          <img src="./images/camila_garcia.jpg" width="264" alt="woman" />
+          <h3 class="small-title">Camila Garcia</h3>
+          <p class="small-descr">Marketing</p>
         </li>
-        <li>
-          <h3 class="srv-title">Analysis</h3>
-          <p class="srv-text">
-            We research and analyze data for better decisions.
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- 4. Третя секція (з таким самим фоном #F4F4FD) -->
-    <section class="sec-light2">
-      <h2 class="sec2-title">our services</h2>
-      <ul>
-        <li>
-          <h3 class="srv-title">Strategy</h3>
-          <p class="srv-text">
-            Our goal is to identify the business problem.
-          </p>
-        </li>
-        <li>
-          <h3 class="srv-title">Management</h3>
-          <p class="srv-text">
-            Effective management ensures timely results.
-          </p>
-        </li>
-        <li>
-          <h3 class="srv-title">Production</h3>
-          <p class="srv-text">
-            Best production practices for any digital product.
-          </p>
-        </li>
-        <li>
-          <h3 class="srv-title">Support</h3>
-          <p class="srv-text">We support your project after release.</p>
+        <li class="our-team-list-item">
+          <img src="./images/daniel_wilson.jpg" width="264" alt="men with black hair" />
+          <h3 class="small-title">Daniel Wilson</h3>
+          <p class="small-descr">UI Designer</p>
         </li>
       </ul>
     </section>
-
-    <!-- 5. Четверта секція (Portfolio) -->
-    <section class="sec-portfolio">
-      <h2 class="sec2-title">our portfolio</h2>
-      <ul>
-        <!-- 1 -->
+    <section>
+      <!-- Images -->
+      <h2 class="secondary-title">Our Portfolio</h2>
+      <ul class="list">
         <li>
-          <img
-            src="./images/banking_app.jpg"
-            alt="Banking App"
-            width="360"
-          />
-          <h3 class="srv-title">Banking App</h3>
-          <p class="srv-text">App</p>
+          <img src="./images/banking_app.jpg" alt="Banking App Interface Concept" width="360" />
+          <h3 class="small-title">Banking App</h3>
+          <p class="small-descr">App</p>
         </li>
-        <!-- 2 -->
         <li>
-          <img
-            src="./images/cashless_payment.jpg"
-            alt="Cashless Payment"
-            width="360"
-          />
-          <h3 class="srv-title">Cashless Payment</h3>
-          <p class="srv-text">Marketing</p>
+          <img src="./images/cashless_payment.jpg" alt="Cashless Payment" width="360" />
+          <h3 class="small-title">Cashless Payment</h3>
+          <p class="small-descr">Marketing</p>
         </li>
-        <!-- 3 -->
         <li>
-          <img
-            src="./images/meditation_app.jpg"
-            alt="Meditation App"
-            width="360"
-          />
-          <h3 class="srv-title">Meditation App</h3>
-          <p class="srv-text">App</p>
+          <img src="./images/meditation_app.jpg" alt="Meditation App" width="360" />
+          <h3 class="small-title">Meditation App</h3>
+          <p class="small-descr">App</p>
         </li>
-        <!-- 4 -->
         <li>
-          <img
-            src="./images/taxi_service.jpg"
-            alt="Taxi Service"
-            width="360"
-          />
-          <h3 class="srv-title">Taxi Service</h3>
-          <p class="srv-text">Marketing</p>
+          <img src="./images/taxi_service.jpg" alt="Taxi Service" width="360" />
+          <h3 class="small-title">Taxi Service</h3>
+          <p class="small-descr">Marketing</p>
         </li>
-        <!-- 5 -->
         <li>
-          <img
-            src="./images/smart_illustration.jpg"
-            alt="Screen Illustrations"
-            width="360"
-          />
-          <h3 class="srv-title">Screen Illustrations</h3>
-          <p class="srv-text">Design</p>
+          <img src="./images/screen_illustration.jpg" alt="Screen Illustrations" width="360" />
+          <h3 class="small-title">Screen Illustrations</h3>
+          <p class="small-descr">Design</p>
         </li>
-        <!-- 6 -->
         <li>
-          <img
-            src="./images/online_courses.jpg"
-            alt="Online Courses"
-            width="360"
-          />
-          <h3 class="srv-title">Online Courses</h3>
-          <p class="srv-text">Marketing</p>
+          <img src="./images/online_courses.jpg" alt="Online Courses" width="360" />
+          <h3 class="small-title">Online Courses</h3>
+          <p class="small-descr">Marketing</p>
         </li>
       </ul>
     </section>
+  </main>
+  <!-- Footer -->
+  <footer class="page-footer">
+    <a href="./index.html" class="logo link">Web<span class="studio-color-dark-theme">Studio</span></a>
+    <p class="small-descr small-descr-dark-theme">
+      Increase the flow of customers and sales for your business with digital
+      marketing & growth solutions.
+    </p>
+  </footer>
+</body>
 
-    <!-- 6. Футер -->
-    <footer class="foot-area">
-      <!-- Логотип (такий самий клас, як у хедері) -->
-      <a href="#" class="nav-logo"
-        >WEB<span class="logo-span">Studio</span></a
-      >
-      <!-- Параграф з кольором через змінну -->
-      <p class="foot-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-    </footer>
-  </body>
 </html>

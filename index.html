@@ -2,245 +2,234 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Підключення шрифтів Google Fonts (Roboto 400, 500, 700) -->
+    <!-- Обов'язкові підключення Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- modern-normalize для скидання базових стилів -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-
-    <!-- Підключення власних стилів -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Підключення файлу стилів -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container header__content">
-        <nav class="nav">
-          <!-- Логотип -->
-          <a href="#" class="nav__logo">WebStudio</a>
-          <!-- Меню -->
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
 
-        <!-- Контакти у шапці -->
-        <address class="header__contacts">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-      <hr class="header__divider" />
+  <body>
+    <!-- 1. Шапка сайту -->
+    <header>
+      <nav>
+        <!-- Логотип -->
+        <a href="#" class="nav-logo"
+          >WEB<span class="logo-span">Studio</span></a
+        >
+        <!-- Список посилань -->
+        <ul>
+          <!-- Перший пункт: Home -->
+          <li>
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <!-- Другий пункт: Portfolio -->
+          <li>
+            <a href="" class="nav-link">Portfolio</a>
+          </li>
+          <!-- Третій пункт: Contacts -->
+          <li>
+            <a href="" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Address -->
+      <address class="hdr-address">
+        <ul>
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="contact-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+110001111111" class="contact-link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero__content">
-        <h1 class="hero__title">Effective Solutions for Your Business</h1>
-        <button class="btn hero__button" type="button">Order Service</button>
-      </div>
+    <!-- 2. Перша секція (Hero) -->
+    <section class="sec-hero">
+      <h2 class="sec-title">Effective Solutions for Your Business</h2>
+      <button type="button" class="btn-order">Order Service</button>
+
+      <!-- Список із 4 пунктами -->
+      <ul>
+        <li>
+          <h3 class="srv-title">Strategy</h3>
+          <p class="srv-text">
+            Our goal is to identify the business problem to walk away with the
+            perfect and creative solution.
+          </p>
+        </li>
+        <li>
+          <h3 class="srv-title">Punctuality</h3>
+          <p class="srv-text">
+            Bring the key message to the brand's audience for the best price
+            within the shortest possible time.
+          </p>
+        </li>
+        <li>
+          <h3 class="srv-title">Diligence</h3>
+          <p class="srv-text">
+            Research and confirm brands with the strongest digital growth
+            opportunities and minimize risk.
+          </p>
+        </li>
+        <li>
+          <h3 class="srv-title">Technologies</h3>
+          <p class="srv-text">
+            Design practice focused on digital experiences. We bring forth a
+            deep passion for problem-solving.
+          </p>
+        </li>
+      </ul>
     </section>
 
-    <!-- Services -->
-    <section class="services" id="studio">
-      <div class="container">
-        <h2 class="section-title services__title">Our Services</h2>
-        <ul class="services__list">
-          <li class="services__item">
-            <h3 class="services__item-title">Strategy</h3>
-            <p class="services__item-text">
-              Our goal is to identify the business problem to walk away with
-              the perfect and creative solution.
-            </p>
-          </li>
-          <li class="services__item">
-            <h3 class="services__item-title">Punctuality</h3>
-            <p class="services__item-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="services__item">
-            <h3 class="services__item-title">Diligence</h3>
-            <p class="services__item-text">
-              Research and confirm brands with the strongest digital growth
-              opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="services__item">
-            <h3 class="services__item-title">Technologies</h3>
-            <p class="services__item-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </div>
+    <!-- 3. Друга секція (фон #F4F4FD) -->
+    <section class="sec-light">
+      <h2 class="sec2-title">our team</h2>
+      <ul>
+        <li>
+          <h3 class="srv-title">Marketing</h3>
+          <p class="srv-text">We deliver the best marketing solutions.</p>
+        </li>
+        <li>
+          <h3 class="srv-title">Design</h3>
+          <p class="srv-text">We create modern and user-friendly designs.</p>
+        </li>
+        <li>
+          <h3 class="srv-title">Development</h3>
+          <p class="srv-text">We build high-quality web applications.</p>
+        </li>
+        <li>
+          <h3 class="srv-title">Analysis</h3>
+          <p class="srv-text">
+            We research and analyze data for better decisions.
+          </p>
+        </li>
+      </ul>
     </section>
 
-    <!-- Team -->
-    <section class="team">
-      <div class="container">
-        <h2 class="section-title team__title">Our Team</h2>
-        <ul class="team__list">
-          <li class="team__item">
-            <img
-              class="team__photo"
-              src="images/mark_guerrero.jpg"
-              width="264"
-              alt="Mark Guerrero - Product Designer"
-            />
-            <h3 class="team__name">Mark Guerrero</h3>
-            <p class="team__position">Product Designer</p>
-          </li>
-          <li class="team__item">
-            <img
-              class="team__photo"
-              src="images/tom_ford.jpg"
-              width="264"
-              alt="Tom Ford - Frontend Developer"
-            />
-            <h3 class="team__name">Tom Ford</h3>
-            <p class="team__position">Frontend Developer</p>
-          </li>
-          <li class="team__item">
-            <img
-              class="team__photo"
-              src="images/camila_garcia.jpg"
-              width="264"
-              alt="Camila Garcia - Marketing"
-            />
-            <h3 class="team__name">Camila Garcia</h3>
-            <p class="team__position">Marketing</p>
-          </li>
-          <li class="team__item">
-            <img
-              class="team__photo"
-              src="images/daniel_wilson.jpg"
-              width="264"
-              alt="Daniel Wilson - UI Designer"
-            />
-            <h3 class="team__name">Daniel Wilson</h3>
-            <p class="team__position">UI Designer</p>
-          </li>
-        </ul>
-      </div>
+    <!-- 4. Третя секція (з таким самим фоном #F4F4FD) -->
+    <section class="sec-light2">
+      <h2 class="sec2-title">our services</h2>
+      <ul>
+        <li>
+          <h3 class="srv-title">Strategy</h3>
+          <p class="srv-text">
+            Our goal is to identify the business problem.
+          </p>
+        </li>
+        <li>
+          <h3 class="srv-title">Management</h3>
+          <p class="srv-text">
+            Effective management ensures timely results.
+          </p>
+        </li>
+        <li>
+          <h3 class="srv-title">Production</h3>
+          <p class="srv-text">
+            Best production practices for any digital product.
+          </p>
+        </li>
+        <li>
+          <h3 class="srv-title">Support</h3>
+          <p class="srv-text">We support your project after release.</p>
+        </li>
+      </ul>
     </section>
 
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="section-title portfolio__title">Our Portfolio</h2>
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <img
-              class="portfolio__image"
-              src="images/banking_app.jpg"
-              width="370"
-              alt="Banking App"
-            />
-            <h3 class="portfolio__item-title">Banking App</h3>
-            <p class="portfolio__item-text">
-              Stylish and user-friendly app design concept for mobile banking.
-            </p>
-          </li>
-          <li class="portfolio__item">
-            <img
-              class="portfolio__image"
-              src="images/cashless_payment.jpg"
-              width="370"
-              alt="Cashless Payment"
-            />
-            <h3 class="portfolio__item-title">Cashless Payment</h3>
-            <p class="portfolio__item-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </li>
-          <li class="portfolio__item">
-            <img
-              class="portfolio__image"
-              src="images/meditation_app.jpg"
-              width="370"
-              alt="Meditation App"
-            />
-            <h3 class="portfolio__item-title">Meditation App</h3>
-            <p class="portfolio__item-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </li>
-          <li class="portfolio__item">
-            <img
-              class="portfolio__image"
-              src="images/taxi_service.jpg"
-              width="370"
-              alt="Taxi Service"
-            />
-            <h3 class="portfolio__item-title">Taxi Service</h3>
-            <p class="portfolio__item-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </li>
-          <li class="portfolio__item">
-            <img
-              class="portfolio__image"
-              src="images/smart_illustration.jpg"
-              width="370"
-              alt="Smart Illustration"
-            />
-            <h3 class="portfolio__item-title">Smart Illustration</h3>
-            <p class="portfolio__item-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </li>
-          <li class="portfolio__item">
-            <img
-              class="portfolio__image"
-              src="images/online_courses.jpg"
-              width="370"
-              alt="Online Courses"
-            />
-            <h3 class="portfolio__item-title">Online Courses</h3>
-            <p class="portfolio__item-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </li>
-        </ul>
-      </div>
+    <!-- 5. Четверта секція (Portfolio) -->
+    <section class="sec-portfolio">
+      <h2 class="sec2-title">our portfolio</h2>
+      <ul>
+        <!-- 1 -->
+        <li>
+          <img
+            src="./images/banking_app.jpg"
+            alt="Banking App"
+            width="360"
+          />
+          <h3 class="srv-title">Banking App</h3>
+          <p class="srv-text">App</p>
+        </li>
+        <!-- 2 -->
+        <li>
+          <img
+            src="./images/cashless_payment.jpg"
+            alt="Cashless Payment"
+            width="360"
+          />
+          <h3 class="srv-title">Cashless Payment</h3>
+          <p class="srv-text">Marketing</p>
+        </li>
+        <!-- 3 -->
+        <li>
+          <img
+            src="./images/meditation_app.jpg"
+            alt="Meditation App"
+            width="360"
+          />
+          <h3 class="srv-title">Meditation App</h3>
+          <p class="srv-text">App</p>
+        </li>
+        <!-- 4 -->
+        <li>
+          <img
+            src="./images/taxi_service.jpg"
+            alt="Taxi Service"
+            width="360"
+          />
+          <h3 class="srv-title">Taxi Service</h3>
+          <p class="srv-text">Marketing</p>
+        </li>
+        <!-- 5 -->
+        <li>
+          <img
+            src="./images/smart_illustration.jpg"
+            alt="Screen Illustrations"
+            width="360"
+          />
+          <h3 class="srv-title">Screen Illustrations</h3>
+          <p class="srv-text">Design</p>
+        </li>
+        <!-- 6 -->
+        <li>
+          <img
+            src="./images/online_courses.jpg"
+            alt="Online Courses"
+            width="360"
+          />
+          <h3 class="srv-title">Online Courses</h3>
+          <p class="srv-text">Marketing</p>
+        </li>
+      </ul>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contacts">
-      <div class="container footer__content">
-        <a class="footer__logo" href="#">WebStudio</a>
-        <p class="footer__text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
-      </div>
+    <!-- 6. Футер -->
+    <footer class="foot-area">
+      <!-- Логотип (такий самий клас, як у хедері) -->
+      <a href="#" class="nav-logo"
+        >WEB<span class="logo-span">Studio</span></a
+      >
+      <!-- Параграф з кольором через змінну -->
+      <p class="foot-text">
+        Increase the flow of customers and sales for your business with digital
+        marketing & growth solutions.
+      </p>
     </footer>
   </body>
 </html>

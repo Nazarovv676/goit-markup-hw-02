@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
-    background-color: var(--background-color);
+    background-color: #FFFFFF;
 }
 
 /* ==================VARIABLES================== */
@@ -48,7 +48,6 @@ body {
 }
 
 .card__title {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -57,8 +56,6 @@ body {
 }
 
 .card__text {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -80,7 +77,6 @@ body {
     font-size: 18px;
     letter-spacing: 0.03em;
     line-height: 1.17;
-    text-decoration: none;
     text-transform: uppercase;
     color: var(--color-iris);
 }
@@ -102,8 +98,6 @@ body {
 }
 
 .contact-link {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -136,7 +130,6 @@ body {
 
 .hero__button {
     font-family: "Roboto", sans-serif;
-    font-style: normal;
     background: var(--color-iris);
     font-weight: 500;
     font-size: 16px;
@@ -164,7 +157,7 @@ body {
 .footer {
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     color: var(--color-iris);
     background: var(--color-navy-blue);
 }
@@ -172,7 +165,6 @@ body {
 /* ==================PORTFOLIO================== */
 .filter-button {
     font-family: "Roboto", sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
